@@ -1,0 +1,858 @@
+.
+├── AWS_Lambda_Functions
+│   ├── nashsmash-submit-contact-form
+│   │   ├── email_services.py
+│   │   ├── email_templates.py
+│   │   ├── lambda_function.py
+│   │   ├── rate_limiting.py
+│   │   ├── storage.py
+│   │   ├── utils.py
+│   │   └── validation.py
+│   ├── nashsmash-submit-franchise-form
+│   │   ├── email_services.py
+│   │   ├── email_templates.py
+│   │   ├── lambda_function.py
+│   │   ├── rate_limiting.py
+│   │   ├── storage.py
+│   │   ├── utils.py
+│   │   └── validation.py
+│   └── nashsmash-submit-job-application-form
+│       ├── email_services.py
+│       ├── email_templates.py
+│       ├── lambda_function.py
+│       ├── rate_limiting.py
+│       ├── storage.py
+│       ├── utils.py
+│       └── validation.py
+├── aws_lambda_security_checklist.md
+├── aws_security_implementation_plan.md
+├── aws-forms-template-system.md
+├── babel.config.js
+├── backup
+├── build.log
+├── cloudfront-caching
+│   ├── cloudfront-cache-readme.md
+│   ├── cloudfront-distribution-function.js
+│   └── updated-distribution-config.json
+├── ContactForm.md
+├── content_generator.log
+├── cspell.json
+├── Local-SEO-Generator
+│   ├── backup
+│   │   └── blogs
+│   │       └── nash-and-smashed
+│   │           ├── blogs_backup_20250727_042508.json
+│   │           ├── blogs_backup_20250727_123621.json
+│   │           ├── blogs_backup_20250727_185410.json
+│   │           ├── blogs_backup_20250728_034244.json
+│   │           └── blogs_backup_20250728_034459.json
+│   ├── business_config
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── business_cli.cpython-312.pyc
+│   │   │   ├── business_config.cpython-312.pyc
+│   │   │   ├── business_locations.cpython-312.pyc
+│   │   │   └── business_profile.cpython-312.pyc
+│   │   ├── business_cli.py
+│   │   ├── business_config.py
+│   │   ├── business_locations.py
+│   │   ├── business_profile.py
+│   │   └── README.business_config.md
+│   ├── business-data.json
+│   ├── content_generator
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── content_generator_cli.cpython-312.pyc
+│   │   │   ├── content_generator_core.cpython-312.pyc
+│   │   │   ├── content_generator_tasks.cpython-312.pyc
+│   │   │   └── content_generator_utils.cpython-312.pyc
+│   │   ├── content_generator_cli.py
+│   │   ├── content_generator_core.py
+│   │   ├── content_generator_tasks.py
+│   │   ├── content_generator_utils.py
+│   │   └── README.content_generator.md
+│   ├── generated_blogs.db
+│   ├── logs
+│   │   └── content_generator.log
+│   ├── prompts
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── prompt_logic.cpython-312.pyc
+│   │   │   ├── prompt_templates.cpython-312.pyc
+│   │   │   └── prompt_utils.cpython-312.pyc
+│   │   ├── prompt_logic.py
+│   │   ├── prompt_templates.py
+│   │   ├── prompt_utils.py
+│   │   └── README.prompts.md
+│   ├── QUICKSTART.md
+│   ├── README.business-data.md
+│   ├── README.md
+│   ├── run.py
+│   ├── setup.sh
+│   ├── src
+│   │   └── core
+│   │       └── Blogs
+│   │           └── Templates
+│   │               └── LocalSEO
+│   │                   └── blogs-list.json
+│   ├── unified_export
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── exporter_cli.cpython-312.pyc
+│   │   │   ├── exporter_core.cpython-312.pyc
+│   │   │   ├── exporter_db.cpython-312.pyc
+│   │   │   ├── exporter_paths.cpython-312.pyc
+│   │   │   └── exporter_utils.cpython-312.pyc
+│   │   ├── exporter_cli.py
+│   │   ├── exporter_core.py
+│   │   ├── exporter_db.py
+│   │   ├── exporter_paths.py
+│   │   ├── exporter_utils.py
+│   │   └── README.unified_export.md
+│   ├── utils
+│   │   ├── __ init__.py
+│   │   ├── __pycache__
+│   │   │   ├── content_utils.cpython-312.pyc
+│   │   │   ├── db_utils.cpython-312.pyc
+│   │   │   ├── logging_utils.cpython-312.pyc
+│   │   │   └── ollama_utils.cpython-312.pyc
+│   │   ├── content_utils.py
+│   │   ├── db_utils.py
+│   │   ├── logging_utils.py
+│   │   ├── misc_utils.py
+│   │   ├── ollama_utils.py
+│   │   └── README.utils.md
+│   └── validate_system.py
+├── nash-combined-policy.json
+├── package-lock.json
+├── package.json
+├── payload.txt
+├── postcss.config.cjs
+├── public
+│   ├── blogs
+│   ├── fonts
+│   │   └── rax8HiqOu8IVPmn7f4xpLjpSmw.woff2
+│   ├── generated_blogs.db
+│   ├── images
+│   │   ├── author
+│   │   │   ├── nash-and-smashed-author.jpg
+│   │   │   ├── nash-and-smashed-author.webp
+│   │   │   └── nash-and-smashed-author.webp.hash
+│   │   ├── backgrounds
+│   │   │   └── bg-yellow-pattern.svg
+│   │   ├── banner
+│   │   │   ├── aerial-of-nash-and-smashed-dumfires-virginia.jpg
+│   │   │   ├── aerial-of-nash-and-smashed-dumfires-virginia.webp
+│   │   │   ├── aerial-of-nash-and-smashed-dumfires-virginia.webp.hash
+│   │   │   ├── banner.jpg
+│   │   │   ├── banner.webp
+│   │   │   ├── banner.webp.hash
+│   │   │   ├── chicken-sandwich-meal.jpg
+│   │   │   ├── chicken-sandwich-meal.webp
+│   │   │   ├── chicken-sandwich-meal.webp.hash
+│   │   │   ├── meal-at-nash-and-smashed-1.jpg
+│   │   │   ├── meal-at-nash-and-smashed-1.webp
+│   │   │   ├── meal-at-nash-and-smashed-1.webp.hash
+│   │   │   ├── meal-at-nash-and-smashed.jpg
+│   │   │   ├── meal-at-nash-and-smashed.webp
+│   │   │   ├── meal-at-nash-and-smashed.webp.hash
+│   │   │   ├── nash-and-smashed-banner-1.jpg
+│   │   │   ├── nash-and-smashed-banner-1.webp
+│   │   │   ├── nash-and-smashed-banner-1.webp.hash
+│   │   │   ├── nash-and-smashed-banner-2.jpg
+│   │   │   ├── nash-and-smashed-banner-2.webp
+│   │   │   ├── nash-and-smashed-banner-2.webp.hash
+│   │   │   ├── nash-and-smashed-banner-3.jpg
+│   │   │   ├── nash-and-smashed-banner-3.webp
+│   │   │   ├── nash-and-smashed-banner-3.webp.hash
+│   │   │   ├── nash-and-smashed-banner-4.jpg
+│   │   │   ├── nash-and-smashed-banner-4.webp
+│   │   │   ├── nash-and-smashed-banner-4.webp.hash
+│   │   │   ├── nash-and-smashed-banner-5.jpg
+│   │   │   ├── nash-and-smashed-banner-5.webp
+│   │   │   ├── nash-and-smashed-banner-5.webp.hash
+│   │   │   ├── nash-and-smashed-banner-6.jpg
+│   │   │   ├── nash-and-smashed-banner-6.webp
+│   │   │   ├── nash-and-smashed-banner-6.webp.hash
+│   │   │   ├── nash-and-smashed-banner.jpg
+│   │   │   ├── nash-and-smashed-banner.webp
+│   │   │   ├── nash-and-smashed-banner.webp.hash
+│   │   │   ├── nash-and-smashed-combo-1.jpg
+│   │   │   ├── nash-and-smashed-combo-1.webp
+│   │   │   ├── nash-and-smashed-combo-1.webp.hash
+│   │   │   ├── nash-and-smashed-combo-3.jpg
+│   │   │   ├── nash-and-smashed-combo-3.webp
+│   │   │   ├── nash-and-smashed-combo-3.webp.hash
+│   │   │   ├── nash-and-smashed-combo-4.jpg
+│   │   │   ├── nash-and-smashed-combo-4.webp
+│   │   │   ├── nash-and-smashed-combo-4.webp.hash
+│   │   │   ├── nash-and-smashed-combo.jpg
+│   │   │   ├── nash-and-smashed-combo.webp
+│   │   │   ├── nash-and-smashed-combo.webp.hash
+│   │   │   ├── smashed-burger-1.jpg
+│   │   │   ├── smashed-burger-1.webp
+│   │   │   ├── smashed-burger-1.webp.hash
+│   │   │   ├── smashed-burger-meal-2.jpg
+│   │   │   ├── smashed-burger-meal-2.webp
+│   │   │   ├── smashed-burger-meal-2.webp.hash
+│   │   │   ├── smashed-burger-meal.jpg
+│   │   │   ├── smashed-burger-meal.webp
+│   │   │   ├── smashed-burger-meal.webp.hash
+│   │   │   ├── smashed-burger.jpg
+│   │   │   ├── smashed-burger.webp
+│   │   │   └── smashed-burger.webp.hash
+│   │   ├── buttons
+│   │   │   ├── UK Button.png
+│   │   │   ├── UK Button.webp
+│   │   │   ├── UK Button.webp.hash
+│   │   │   ├── uk-button.png
+│   │   │   ├── uk-button.webp
+│   │   │   ├── uk-button.webp.hash
+│   │   │   ├── USA Button.png
+│   │   │   ├── USA Button.webp
+│   │   │   ├── USA Button.webp.hash
+│   │   │   ├── usa-button.png
+│   │   │   ├── usa-button.webp
+│   │   │   └── usa-button.webp.hash
+│   │   ├── favicons
+│   │   │   ├── apple-touch-icon.png
+│   │   │   ├── apple-touch-icon.webp
+│   │   │   ├── apple-touch-icon.webp.hash
+│   │   │   ├── favicon-96x96.png
+│   │   │   ├── favicon-96x96.webp
+│   │   │   ├── favicon-96x96.webp.hash
+│   │   │   ├── favicon.ico
+│   │   │   ├── favicon.svg
+│   │   │   ├── site.webmanifest
+│   │   │   ├── web-app-manifest-192x192.png
+│   │   │   ├── web-app-manifest-192x192.webp
+│   │   │   ├── web-app-manifest-192x192.webp.hash
+│   │   │   ├── web-app-manifest-512x512.png
+│   │   │   ├── web-app-manifest-512x512.webp
+│   │   │   └── web-app-manifest-512x512.webp.hash
+│   │   ├── food
+│   │   │   ├── april-16-2025
+│   │   │   │   ├── burger-from-Nash-And-Smashed-Dumfries-Virginia.jpg
+│   │   │   │   ├── burger-from-Nash-And-Smashed-Dumfries-Virginia.webp
+│   │   │   │   ├── burger-from-Nash-And-Smashed-Dumfries-Virginia.webp.hash
+│   │   │   │   ├── chicken-sandwich-from-Nash-And-Smashed-Dumfries-Virginia.jpg
+│   │   │   │   ├── chicken-sandwich-from-Nash-And-Smashed-Dumfries-Virginia.webp
+│   │   │   │   ├── chicken-sandwich-from-Nash-And-Smashed-Dumfries-Virginia.webp.hash
+│   │   │   │   ├── fried-chicken-from-Nash-And-Smashed-Dumfries-Virginia.jpg
+│   │   │   │   ├── fried-chicken-from-Nash-And-Smashed-Dumfries-Virginia.webp
+│   │   │   │   ├── fried-chicken-from-Nash-And-Smashed-Dumfries-Virginia.webp.hash
+│   │   │   │   ├── interior-of-Nash-And-Smashed-Dumfries-Virginia.jpg
+│   │   │   │   ├── interior-of-Nash-And-Smashed-Dumfries-Virginia.webp
+│   │   │   │   ├── interior-of-Nash-And-Smashed-Dumfries-Virginia.webp.hash
+│   │   │   │   ├── Nash-And-Smashed-Dumfries-Virginia-Exterior.jpg
+│   │   │   │   ├── Nash-And-Smashed-Dumfries-Virginia-Exterior.webp
+│   │   │   │   └── Nash-And-Smashed-Dumfries-Virginia-Exterior.webp.hash
+│   │   │   ├── bucket-of-chicken-from-Nash-And-Smashed.png
+│   │   │   ├── bucket-of-chicken-from-Nash-And-Smashed.webp
+│   │   │   ├── bucket-of-chicken-from-Nash-And-Smashed.webp.hash
+│   │   │   ├── bucket-of-chicken-tilt-over-from-Nash-And-Smashed.png
+│   │   │   ├── bucket-of-chicken-tilt-over-from-Nash-And-Smashed.webp
+│   │   │   ├── bucket-of-chicken-tilt-over-from-Nash-And-Smashed.webp.hash
+│   │   │   ├── burger-stack-from-Nash-And-Smashed-2.png
+│   │   │   ├── burger-stack-from-Nash-And-Smashed-2.webp
+│   │   │   ├── burger-stack-from-Nash-And-Smashed-2.webp.hash
+│   │   │   ├── burger-stack-from-Nash-And-Smashed.png
+│   │   │   ├── burger-stack-from-Nash-And-Smashed.webp
+│   │   │   ├── burger-stack-from-Nash-And-Smashed.webp.hash
+│   │   │   ├── chicken-bucket.png
+│   │   │   ├── chicken-bucket.webp
+│   │   │   ├── chicken-bucket.webp.hash
+│   │   │   ├── chicken-sandwich-from-Nash-And-Smashed-2.png
+│   │   │   ├── chicken-sandwich-from-Nash-And-Smashed-2.webp
+│   │   │   ├── chicken-sandwich-from-Nash-And-Smashed-2.webp.hash
+│   │   │   ├── chicken-sandwich-from-Nash-And-Smashed.png
+│   │   │   ├── chicken-sandwich-from-Nash-And-Smashed.webp
+│   │   │   ├── chicken-sandwich-from-Nash-And-Smashed.webp.hash
+│   │   │   ├── nash-and-smashed-burgers.png
+│   │   │   ├── nash-and-smashed-burgers.webp
+│   │   │   ├── nash-and-smashed-burgers.webp.hash
+│   │   │   ├── nash-and-smashed-chicken-bucket-and-smashed-burgers.png
+│   │   │   ├── nash-and-smashed-chicken-bucket-and-smashed-burgers.webp
+│   │   │   ├── nash-and-smashed-combo-2.jpg
+│   │   │   ├── nash-and-smashed-combo-2.webp
+│   │   │   ├── nash-and-smashed-combo-2.webp.hash
+│   │   │   ├── nash-and-smashed-smashed-burger.jpg
+│   │   │   ├── nash-and-smashed-smashed-burger.webp
+│   │   │   ├── nash-and-smashed-smashed-burger.webp.hash
+│   │   │   ├── two-mocktails-from-Nash-And-Smashed.png
+│   │   │   ├── two-mocktails-from-Nash-And-Smashed.webp
+│   │   │   └── two-mocktails-from-Nash-And-Smashed.webp.hash
+│   │   ├── interior
+│   │   │   ├── interior-nash-and-smashed.jpg
+│   │   │   ├── interior-nash-and-smashed.webp
+│   │   │   └── interior-nash-and-smashed.webp.hash
+│   │   ├── lifestyle
+│   │   │   ├── bikers-enjoying-nash-and-smashed-burgers.jpg
+│   │   │   ├── bikers-enjoying-nash-and-smashed-burgers.webp
+│   │   │   ├── bikers-enjoying-nash-and-smashed-burgers.webp.hash
+│   │   │   ├── customer-purchasing-nash-and-smashed.jpg
+│   │   │   ├── customer-purchasing-nash-and-smashed.webp
+│   │   │   ├── customer-purchasing-nash-and-smashed.webp.hash
+│   │   │   ├── customers-in-line-at-nash-and-smashed.jpg
+│   │   │   ├── customers-in-line-at-nash-and-smashed.webp
+│   │   │   ├── customers-in-line-at-nash-and-smashed.webp.hash
+│   │   │   ├── kitchen-at-nash-and-smashed.jpg
+│   │   │   ├── kitchen-at-nash-and-smashed.webp
+│   │   │   ├── kitchen-at-nash-and-smashed.webp.hash
+│   │   │   ├── meal-at-nash-and-smashed.jpg
+│   │   │   ├── meal-at-nash-and-smashed.webp
+│   │   │   └── meal-at-nash-and-smashed.webp.hash
+│   │   ├── logos
+│   │   │   ├── nash-and-smashed-logo-1.svg
+│   │   │   ├── nash-and-smashed-logo-symbol.png
+│   │   │   ├── nash-and-smashed-logo-symbol.webp
+│   │   │   ├── nash-and-smashed-logo.png
+│   │   │   └── nash-and-smashed-logo.webp
+│   │   ├── media
+│   │   ├── og-images
+│   │   │   ├── nash-and-smashed-banner-og-image.jpg
+│   │   │   ├── nash-and-smashed-banner-og-image.webp
+│   │   │   ├── nash-and-smashed-banner-og-image.webp.hash
+│   │   │   ├── nash-and-smashed-og-image.jpg
+│   │   │   ├── nash-and-smashed-og-image.webp
+│   │   │   └── nash-and-smashed-og-image.webp.hash
+│   │   ├── poster
+│   │   │   ├── nash-and-smashed-aerial-footage-of-dumfries-virginia-location.jpg
+│   │   │   ├── nash-and-smashed-aerial-footage-of-dumfries-virginia-location.webp
+│   │   │   └── nash-and-smashed-aerial-footage-of-dumfries-virginia-location.webp.hash
+│   │   ├── svgs
+│   │   │   ├── allergies-2.svg
+│   │   │   ├── allergies.svg
+│   │   │   ├── burger.svg
+│   │   │   ├── contact-us.svg
+│   │   │   ├── fries-2.png
+│   │   │   ├── fries-2.webp
+│   │   │   ├── fries-2.webp.hash
+│   │   │   ├── fries.png
+│   │   │   ├── fries.svg
+│   │   │   ├── fries.webp
+│   │   │   ├── fries.webp.hash
+│   │   │   ├── halal.svg
+│   │   │   ├── how-to-order.svg
+│   │   │   ├── our-menu.svg
+│   │   │   └── our-store.svg
+│   │   └── united-kingdom
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-1.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-1.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-1.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-10.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-10.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-10.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-11.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-11.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-11.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-12.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-12.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-12.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-13.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-13.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-13.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-14.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-14.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-14.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-15.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-15.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-15.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-16.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-16.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-16.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-17.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-17.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-17.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-18.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-18.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-18.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-19.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-19.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-19.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-2.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-2.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-2.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-20.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-20.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-20.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-21.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-21.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-21.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-22.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-22.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-22.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-23.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-23.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-23.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-24.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-24.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-24.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-25.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-25.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-25.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-26.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-26.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-26.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-27.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-27.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-27.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-28.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-28.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-28.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-29.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-29.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-29.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-3.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-3.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-3.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-30.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-30.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-30.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-31.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-31.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-31.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-4.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-4.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-4.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-5.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-5.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-5.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-6.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-6.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-6.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-7.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-7.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-7.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-8.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-8.webp
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-8.webp.hash
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-9.jpg
+│   │       ├── nash-and-smashed-united-kingdom-restaurant-9.webp
+│   │       └── nash-and-smashed-united-kingdom-restaurant-9.webp.hash
+│   ├── index.html
+│   ├── json
+│   ├── offline.html
+│   ├── pdfs
+│   │   ├── nash-and-smashed-franchise-brouchure.pdf
+│   │   ├── nash-and-smashed-franchise-brouchure.rtf
+│   │   └── nash-and-smashed-franchise-brouchure.txt
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── videos
+│       ├── customers-standing-line-at-nash-and-smashed.mp4
+│       ├── nash-and-smashed-franchise-video.mp4
+│       ├── nash-and-smashed-united-kingdown-restaurant-promo-video_uncompressed.mp4
+│       ├── nash-and-smashed-united-kingdown-restaurant-promo-video-poster.jpg
+│       ├── nash-and-smashed-united-kingdown-restaurant-promo-video-poster.webp
+│       ├── nash-and-smashed-united-kingdown-restaurant-promo-video-poster.webp.hash
+│       └── nash-and-smashed-united-kingdown-restaurant-promo-video.mp4
+├── S3-COMMANDS.md
+├── scripts
+│   ├── cloudfront
+│   │   └── invalidate-distribution.sh
+│   ├── cloudfront-distribution.js
+│   ├── fix-s3-caching.sh
+│   ├── generate-sitemap.js
+│   ├── generate-static-templates.js
+│   ├── generate-webp.js
+│   ├── s3-caching
+│   │   ├── fix-all-caching.sh
+│   │   ├── fix-css-caching.sh
+│   │   ├── fix-fonts-caching.sh
+│   │   ├── fix-html-caching.sh
+│   │   ├── fix-images-caching.sh
+│   │   ├── fix-js-caching.sh
+│   │   └── verify-caching.sh
+│   └── set-s3-cacheing-commands.md
+├── src
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── images
+│   │   └── videos
+│   ├── core
+│   │   ├── api
+│   │   │   └── apiClient.ts
+│   │   ├── Blogs
+│   │   │   ├── AllBlogs.tsx
+│   │   │   ├── blogs-list.json
+│   │   │   └── Templates
+│   │   │       └── LocalSEO
+│   │   │           ├── Blockquote.tsx
+│   │   │           ├── BlogBreadcrumbs.tsx
+│   │   │           ├── BlogContent.tsx
+│   │   │           ├── BlogGallery
+│   │   │           │   ├── gallery.data.ts
+│   │   │           │   └── index.tsx
+│   │   │           ├── BlogHeader.tsx
+│   │   │           ├── BlogMeta.tsx
+│   │   │           ├── BlogPage.tsx
+│   │   │           ├── BlogSidebar
+│   │   │           │   ├── AuthorCard.tsx
+│   │   │           │   ├── BlogNewsletter.tsx
+│   │   │           │   ├── CTA.tsx
+│   │   │           │   ├── index.tsx
+│   │   │           │   └── RelatedPosts.tsx
+│   │   │           ├── database_content.json
+│   │   │           ├── Gallery.tsx
+│   │   │           ├── GoogleMapsDirection.tsx
+│   │   │           ├── GoogleRichSnippet.tsx
+│   │   │           ├── Hero-Video.tsx
+│   │   │           ├── Hero.tsx
+│   │   │           ├── SocialShare.tsx
+│   │   │           ├── TagsSection.tsx
+│   │   │           └── types.ts
+│   │   ├── constants
+│   │   │   ├── business.ts
+│   │   │   ├── faqs.ts
+│   │   │   ├── GoogleRichSnippet
+│   │   │   │   ├── backlinks.ts
+│   │   │   │   └── sameas.ts
+│   │   │   ├── locations.ts
+│   │   │   ├── mediaLinks.tsx
+│   │   │   ├── menu-items.json
+│   │   │   ├── menuItems.ts
+│   │   │   └── notes.txt
+│   │   ├── env
+│   │   │   ├── env.ts
+│   │   │   └── index.ts
+│   │   ├── FAQs
+│   │   │   ├── data.ts
+│   │   │   ├── FAQAccordian.tsx
+│   │   │   └── types.ts
+│   │   ├── Fonts
+│   │   │   ├── Copyduck
+│   │   │   │   ├── Copyduck.jpg
+│   │   │   │   ├── Copyduck.otf
+│   │   │   │   ├── Copyduck.ttf
+│   │   │   │   ├── Copyduck.webp
+│   │   │   │   ├── Copyduck.webp.hash
+│   │   │   │   ├── More Info.txt
+│   │   │   │   └── Read Me.pdf
+│   │   │   ├── CosmicLager
+│   │   │   │   ├── CosmicLager-Regular.eot
+│   │   │   │   ├── CosmicLager-Regular.ttf
+│   │   │   │   ├── CosmicLager-Regular.woff
+│   │   │   │   ├── CosmicLager-Regular.woff2
+│   │   │   │   ├── CosmicLager-Shadow.eot
+│   │   │   │   ├── CosmicLager-Shadow.ttf
+│   │   │   │   ├── CosmicLager-Shadow.woff
+│   │   │   │   ├── CosmicLager-Shadow.woff2
+│   │   │   │   ├── CosmicLager-ShadowTX.eot
+│   │   │   │   ├── CosmicLager-ShadowTX.ttf
+│   │   │   │   ├── CosmicLager-ShadowTX.woff
+│   │   │   │   ├── CosmicLager-ShadowTX.woff2
+│   │   │   │   ├── CosmicLager-Texture.eot
+│   │   │   │   ├── CosmicLager-Texture.ttf
+│   │   │   │   ├── CosmicLager-Texture.woff
+│   │   │   │   ├── CosmicLager-Texture.woff2
+│   │   │   │   ├── CosmicLagerRough-Regular.eot
+│   │   │   │   ├── CosmicLagerRough-Regular.ttf
+│   │   │   │   ├── CosmicLagerRough-Regular.woff
+│   │   │   │   ├── CosmicLagerRough-Regular.woff2
+│   │   │   │   ├── CosmicLagerRough-Shadow.eot
+│   │   │   │   ├── CosmicLagerRough-Shadow.ttf
+│   │   │   │   ├── CosmicLagerRough-Shadow.woff
+│   │   │   │   ├── CosmicLagerRough-Shadow.woff2
+│   │   │   │   ├── CosmicLagerRough-ShadowTX.eot
+│   │   │   │   ├── CosmicLagerRough-ShadowTX.ttf
+│   │   │   │   ├── CosmicLagerRough-ShadowTX.woff
+│   │   │   │   ├── CosmicLagerRough-ShadowTX.woff2
+│   │   │   │   ├── CosmicLagerRough-Texture.eot
+│   │   │   │   ├── CosmicLagerRough-Texture.ttf
+│   │   │   │   ├── CosmicLagerRough-Texture.woff
+│   │   │   │   ├── CosmicLagerRough-Texture.woff2
+│   │   │   │   ├── demo.html
+│   │   │   │   └── stylesheet.css
+│   │   │   ├── OpenSans
+│   │   │   │   ├── OpenSans_Condensed-Bold.ttf
+│   │   │   │   ├── OpenSans_Condensed-BoldItalic.ttf
+│   │   │   │   ├── OpenSans_Condensed-ExtraBold.ttf
+│   │   │   │   ├── OpenSans_Condensed-ExtraBoldItalic.ttf
+│   │   │   │   ├── OpenSans_Condensed-Italic.ttf
+│   │   │   │   ├── OpenSans_Condensed-Light.ttf
+│   │   │   │   ├── OpenSans_Condensed-LightItalic.ttf
+│   │   │   │   ├── OpenSans_Condensed-Medium.ttf
+│   │   │   │   ├── OpenSans_Condensed-MediumItalic.ttf
+│   │   │   │   ├── OpenSans_Condensed-Regular.ttf
+│   │   │   │   ├── OpenSans_Condensed-SemiBold.ttf
+│   │   │   │   ├── OpenSans_Condensed-SemiBoldItalic.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-Bold.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-BoldItalic.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-ExtraBold.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-ExtraBoldItalic.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-Italic.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-Light.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-LightItalic.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-Medium.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-MediumItalic.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-Regular.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-SemiBold.ttf
+│   │   │   │   ├── OpenSans_SemiCondensed-SemiBoldItalic.ttf
+│   │   │   │   ├── OpenSans-Bold.ttf
+│   │   │   │   ├── OpenSans-BoldItalic.ttf
+│   │   │   │   ├── OpenSans-ExtraBold.ttf
+│   │   │   │   ├── OpenSans-ExtraBoldItalic.ttf
+│   │   │   │   ├── OpenSans-Italic-VariableFont_wdth,wght.ttf
+│   │   │   │   ├── OpenSans-Italic.ttf
+│   │   │   │   ├── OpenSans-Light.ttf
+│   │   │   │   ├── OpenSans-LightItalic.ttf
+│   │   │   │   ├── OpenSans-Medium.ttf
+│   │   │   │   ├── OpenSans-MediumItalic.ttf
+│   │   │   │   ├── OpenSans-Regular.ttf
+│   │   │   │   ├── OpenSans-SemiBold.ttf
+│   │   │   │   ├── OpenSans-SemiBoldItalic.ttf
+│   │   │   │   └── OpenSans-VariableFont_wdth,wght.ttf
+│   │   │   └── ProximaNova
+│   │   │       ├── proximanova_black.otf
+│   │   │       ├── proximanova_black.ttf
+│   │   │       ├── proximanova_blackit.otf
+│   │   │       ├── proximanova_bold.otf
+│   │   │       ├── proximanova_boldit.otf
+│   │   │       ├── proximanova_extrabold.otf
+│   │   │       ├── proximanova_light.otf
+│   │   │       └── proximanova_regular.ttf
+│   │   ├── Forms
+│   │   │   └── ContactForm
+│   │   ├── metadata
+│   │   │   └── page-metadata.js
+│   │   ├── Pages
+│   │   │   ├── Calories
+│   │   │   │   ├── AdditionalInformation.tsx
+│   │   │   │   ├── AllergenInformation.tsx
+│   │   │   │   ├── CategoryCard
+│   │   │   │   │   ├── data.ts
+│   │   │   │   │   └── index.tsx
+│   │   │   │   ├── data.ts
+│   │   │   │   ├── gsap.ts
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── Introduction.tsx
+│   │   │   │   ├── meta.ts
+│   │   │   │   ├── NutritionalInformation
+│   │   │   │   │   ├── desktop.tsx
+│   │   │   │   │   ├── index.tsx
+│   │   │   │   │   └── mobile.tsx
+│   │   │   │   └── NutritionTable.tsx
+│   │   │   ├── Careers
+│   │   │   │   ├── BenefitsSection.tsx
+│   │   │   │   ├── CareerForm.tsx
+│   │   │   │   ├── form.actions copy.ts
+│   │   │   │   ├── form.actions.ts
+│   │   │   │   ├── FormErrorMessage.tsx
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── Introduction.tsx
+│   │   │   │   ├── PositionSection.tsx
+│   │   │   │   └── types.ts
+│   │   │   ├── Contact
+│   │   │   │   ├── Banner.tsx
+│   │   │   │   ├── ContactForm.tsx
+│   │   │   │   ├── ContactInformation.tsx
+│   │   │   │   ├── forms.actions.ts
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── MapSection.tsx
+│   │   │   │   └── types.ts
+│   │   │   ├── Credits
+│   │   │   │   └── index.tsx
+│   │   │   ├── Franchise
+│   │   │   │   ├── BusinessConcept.tsx
+│   │   │   │   ├── form.actions.ts
+│   │   │   │   ├── franchise_security_implementation.md
+│   │   │   │   ├── FranchiseFAQs.tsx
+│   │   │   │   ├── FranchiseFeatures.tsx
+│   │   │   │   ├── FranchiseForm.tsx
+│   │   │   │   ├── FranchiseVideo.tsx
+│   │   │   │   ├── Hero
+│   │   │   │   │   └── index.tsx
+│   │   │   │   ├── index.tsx
+│   │   │   │   └── TrainingAndSupport.tsx
+│   │   │   ├── Fundraising
+│   │   │   │   ├── data.ts
+│   │   │   │   ├── EligibilityCriteria.tsx
+│   │   │   │   ├── form.actions.ts
+│   │   │   │   ├── FundraisingFAQ.tsx
+│   │   │   │   ├── FundraisingForm.tsx
+│   │   │   │   ├── FundraisingSteps.tsx
+│   │   │   │   ├── gsap.ts
+│   │   │   │   ├── Hero.tsx
+│   │   │   │   ├── index.tsx
+│   │   │   │   └── meta.ts
+│   │   │   ├── Homepage
+│   │   │   │   ├── AboutMenuItems
+│   │   │   │   │   ├── animations.tsx
+│   │   │   │   │   ├── index.tsx
+│   │   │   │   │   └── types.ts
+│   │   │   │   ├── Banner
+│   │   │   │   │   └── index.tsx
+│   │   │   │   ├── GoogleRichSnippet copy.tsx
+│   │   │   │   ├── GoogleRichSnippet.tsx
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── meta.ts
+│   │   │   │   └── preloadAssets.ts
+│   │   │   ├── Locations
+│   │   │   │   ├── forms.actions.ts
+│   │   │   │   ├── gsap.ts
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── LocationCard.tsx
+│   │   │   │   ├── LocationFilters-dropdowns.tsx
+│   │   │   │   ├── LocationFilters.tsx
+│   │   │   │   ├── types.ts
+│   │   │   │   └── UnitedKingdom
+│   │   │   │       └── Chelmsford
+│   │   │   │           ├── ContactForm
+│   │   │   │           │   ├── form.actions.ts
+│   │   │   │           │   ├── index.tsx
+│   │   │   │           │   └── types.ts
+│   │   │   │           ├── ContentSection
+│   │   │   │           │   └── index.tsx
+│   │   │   │           ├── data.ts
+│   │   │   │           ├── gsap.ts
+│   │   │   │           ├── Hero
+│   │   │   │           │   └── index.tsx
+│   │   │   │           ├── ImageGridGallery
+│   │   │   │           │   ├── data.ts
+│   │   │   │           │   ├── gsap.ts
+│   │   │   │           │   ├── index.tsx
+│   │   │   │           │   └── types.ts
+│   │   │   │           ├── index.tsx
+│   │   │   │           ├── LocationMap
+│   │   │   │           │   └── index.tsx
+│   │   │   │           ├── preloadAssets.ts
+│   │   │   │           └── types.ts
+│   │   │   ├── MediaLinks
+│   │   │   │   ├── gsap.ts
+│   │   │   │   ├── Hero
+│   │   │   │   │   └── index.tsx
+│   │   │   │   ├── index.tsx
+│   │   │   │   └── SearchBar.tsx
+│   │   │   ├── PrivacyPolicy
+│   │   │   │   └── index.tsx
+│   │   │   └── TermsOfServices
+│   │   │       └── index.tsx
+│   │   ├── Subscribe
+│   │   │   ├── form.actions.ts
+│   │   │   ├── SubscribeForm.tsx
+│   │   │   └── types.ts
+│   │   ├── Templates
+│   │   │   ├── FoodCategories
+│   │   │   │   ├── data.ts
+│   │   │   │   ├── gsap.ts
+│   │   │   │   └── index.tsx
+│   │   │   ├── Footer
+│   │   │   │   ├── index.tsx
+│   │   │   │   └── SocialMedia.tsx
+│   │   │   ├── FullWidthBannerSection
+│   │   │   │   └── index.tsx
+│   │   │   ├── Header
+│   │   │   │   ├── DesktopHeader
+│   │   │   │   │   └── index.tsx
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── MobileHeader
+│   │   │   │   │   ├── gsap.ts
+│   │   │   │   │   ├── index.tsx
+│   │   │   │   │   └── MobileMenuOverlay.tsx
+│   │   │   │   ├── TopLayer.tsx
+│   │   │   │   └── TopLayerAnnoucement.tsx
+│   │   │   ├── Hero
+│   │   │   │   ├── gsap.ts
+│   │   │   │   └── index.tsx
+│   │   │   ├── Locations
+│   │   │   │   ├── LocationsCallToAction-2.tsx
+│   │   │   │   └── LocationsCallToAction.tsx
+│   │   │   └── NotificationPopUp
+│   │   │       ├── data.ts
+│   │   │       ├── gsap.ts
+│   │   │       ├── index.tsx
+│   │   │       └── types.ts
+│   │   ├── types
+│   │   ├── ui
+│   │   │   ├── Buttons
+│   │   │   │   ├── ArrowButton.tsx
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── OrderNow
+│   │   │   │   │   ├── OrderNowButton.tsx
+│   │   │   │   │   └── OrderNowIconButton.tsx
+│   │   │   │   └── types.ts
+│   │   │   ├── Card
+│   │   │   │   └── GoogleReview.tsx
+│   │   │   ├── Input
+│   │   │   ├── SearchBar
+│   │   │   │   └── index.tsx
+│   │   │   ├── Select
+│   │   │   ├── TextArea
+│   │   │   └── Toast
+│   │   │       └── index.tsx
+│   │   └── utils
+│   │       ├── accordion.js
+│   │       ├── autoplay-videos.ts
+│   │       ├── bounceAnimation.js
+│   │       ├── cache.ts
+│   │       ├── formatTime.ts
+│   │       ├── horizontal-helper-gsap.js
+│   │       ├── index.ts
+│   │       └── ScrollToTop.tsx
+│   ├── declarations.d.ts
+│   ├── error
+│   │   ├── ErrorBoundary
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   └── NotFoundPage
+│   │       ├── index.tsx
+│   │       └── types.ts
+│   ├── index.tsx
+│   ├── routes.tsx
+│   └── styles
+│       ├── buttons.css
+│       ├── colors.css
+│       ├── critical.css
+│       ├── flipImg.css
+│       ├── fonts.css
+│       ├── forms.css
+│       ├── gradients.css
+│       ├── headers.css
+│       ├── imageMasonry.css
+│       ├── index.css
+│       ├── menu.css
+│       ├── paragraph.css
+│       ├── reset.css
+│       ├── rotatationAnime.css
+│       ├── sliderImgGallery.css
+│       ├── swiper.css
+│       └── ticker.css
+├── src-backup-aug-4-2025.zip
+├── tailwind.config.js
+├── tree-directory-structure.txt
+├── tsconfig.json
+├── webpack
+│   ├── common
+│   │   ├── base.js
+│   │   ├── optimization.js
+│   │   └── plugins.js
+│   ├── dev
+│   │   ├── base.js
+│   │   └── server.js
+│   ├── prod
+│   │   ├── base.js
+│   │   ├── server.js
+│   │   ├── staticRoutes-blog.js
+│   │   └── staticRoutes.js
+│   ├── templates
+│   │   ├── blog.html
+│   │   ├── calories.html
+│   │   ├── careers.html
+│   │   ├── contact.html
+│   │   ├── franchise.html
+│   │   ├── index.html
+│   │   ├── locations-uk-chelmsford.html
+│   │   ├── locations.html
+│   │   ├── privacy-policy.html
+│   │   └── terms-of-service.html
+│   ├── webpack.common.js
+│   ├── webpack.dev.js
+│   └── webpack.prod.js
+└── webpack-backup-perfect-technical-seo.zip
+
+131 directories, 725 files

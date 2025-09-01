@@ -1,0 +1,453 @@
+{
+  "nash-and-smashed": {
+    "business_id": "nash-and-smashed",
+    "business_name": "Nash & Smashed",
+    "base_url": "nashandsmashed.com",
+    "online_ordering_url": "https://nashandsmash.order-online.ai",
+    "phone": "571-762-2677",
+    "email": "info@nashandsmashed.com",
+    "description": "Nash & Smashed is a restaurant specializing in Nashville hot chicken and smashed burgers with multiple locations across Virginia, Maryland, and Washington DC. Known for our quality ingredients, signature spice blends, and classic comfort food with a modern twist, we offer dine-in, takeout, and online ordering options.",
+    "specialties": [
+      "Nashville Hot Chicken",
+      "Smashed Burgers",
+      "Hot Wings",
+      "Loaded Fries",
+      "Mac and Cheese",
+      "Craft Shakes"
+    ],
+    "headquarters": {
+      "id": "headquarters",
+      "name": "Headquarters",
+      "address": "5609 Sandy Lewis Drive, Unit G & H",
+      "city": "Fairfax",
+      "state": "VA",
+      "zipCode": "22032",
+      "country": "USA",
+      "fullAddress": "5609 Sandy Lewis Drive, Unit G & H, Fairfax, VA 22032",
+      "isHeadquarters": true
+    },
+    "locations": [
+      {
+        "id": "manassas",
+        "name": "Manassas",
+        "address": "12853 Galveston Ct",
+        "city": "Manassas",
+        "state": "VA",
+        "zipCode": "20112",
+        "country": "USA",
+        "status": "operational",
+        "fullAddress": "12853 Galveston Ct, Manassas, VA 20112, USA",
+        "googleMapsUrl": "https://maps.app.goo.gl/rKVJHdrT8f1LUsSM9",
+        "phone": "571-762-2677",
+        "email": "kaziarif393@gmail.com",
+        "coordinates": { "lat": 38.7312, "lng": -77.4753 },
+        "hours": {
+          "monday": "11:00 AM - 12:00 AM",
+          "tuesday": "11:00 AM - 12:00 AM",
+          "wednesday": "11:00 AM - 12:00 AM",
+          "thursday": "11:00 AM - 12:00 AM",
+          "friday": "11:00 AM - 2:00 AM",
+          "saturday": "11:00 AM - 2:00 AM",
+          "sunday": "11:00 AM - 12:00 AM"
+        }
+      },
+      {
+        "id": "dumfries",
+        "name": "Dumfries",
+        "address": "3934 Fettler Park Dr",
+        "city": "Dumfries",
+        "state": "VA",
+        "zipCode": "22025",
+        "country": "USA",
+        "status": "operational",
+        "fullAddress": "3934 Fettler Park Dr, Dumfries, VA 22025",
+        "googleMapsUrl": "https://maps.app.goo.gl/A7P3FFjrgskU5Ap97",
+        "phone": "571-370-5177",
+        "email": "Shohrab61@yahoo.com",
+        "coordinates": { "lat": 38.5732, "lng": -77.3269 },
+        "hours": {
+          "monday": "11:00 AM - 10:00 PM",
+          "tuesday": "11:00 AM - 10:00 PM",
+          "wednesday": "11:00 AM - 10:00 PM",
+          "thursday": "11:00 AM - 10:00 PM",
+          "friday": "11:00 AM - 11:00 PM",
+          "saturday": "11:00 AM - 11:00 PM",
+          "sunday": "12:00 PM - 9:00 PM"
+        }
+      },
+      {
+        "id": "hampton",
+        "name": "Hampton",
+        "address": "36 Coliseum Xing",
+        "city": "Hampton",
+        "state": "VA",
+        "zipCode": "23666",
+        "country": "USA",
+        "status": "operational",
+        "fullAddress": "36 Coliseum Xing, Hampton, VA 23666",
+        "googleMapsUrl": "https://maps.app.goo.gl/AoCwAfsdgwk2BDkk9",
+        "phone": "757-347-0717",
+        "email": "talhamughal553@gmail.com",
+        "coordinates": { "lat": 37.0299, "lng": -76.3452 },
+        "hours": {
+          "monday": "11:00 AM - 10:00 PM",
+          "tuesday": "11:00 AM - 10:00 PM",
+          "wednesday": "11:00 AM - 10:00 PM",
+          "thursday": "11:00 AM - 10:00 PM",
+          "friday": "11:00 AM - 11:00 PM",
+          "saturday": "11:00 AM - 11:00 PM",
+          "sunday": "12:00 PM - 9:00 PM"
+        }
+      },
+      {
+        "id": "norfolk",
+        "name": "Norfolk",
+        "address": "4820 Hampton Blvd",
+        "city": "Norfolk",
+        "state": "VA",
+        "zipCode": "23508",
+        "country": "USA",
+        "status": "operational",
+        "fullAddress": "4820 Hampton Blvd, Norfolk, VA 23508",
+        "googleMapsUrl": "https://maps.app.goo.gl/b8bivDNQorJeyxYC6",
+        "phone": "571-242-5230",
+        "email": "talhamughal553@gmail.com",
+        "coordinates": { "lat": 36.8851, "lng": -76.3018 },
+        "hours": {
+          "monday": "11:00 AM - 10:00 PM",
+          "tuesday": "11:00 AM - 10:00 PM",
+          "wednesday": "11:00 AM - 10:00 PM",
+          "thursday": "11:00 AM - 10:00 PM",
+          "friday": "11:00 AM - 11:00 PM",
+          "saturday": "11:00 AM - 11:00 PM",
+          "sunday": "12:00 PM - 9:00 PM"
+        }
+      },
+      {
+        "id": "silver-spring",
+        "name": "Silver Spring",
+        "address": "10121 Colesville Rd Unit #10",
+        "city": "Silver Spring",
+        "state": "MD",
+        "zipCode": "20901",
+        "country": "USA",
+        "status": "operational",
+        "fullAddress": "10121 Colesville Rd, Unit #10, Silver Spring, MD 20901",
+        "googleMapsUrl": "https://maps.app.goo.gl/zQE3wEQaDT367m6D7",
+        "phone": "301-783-3907",
+        "email": "1833sa@gmail.com",
+        "coordinates": { "lat": 39.0046, "lng": -77.0261 },
+        "hours": {
+          "monday": "10:45 AM - 10:00 PM",
+          "tuesday": "10:45 AM - 10:00 PM",
+          "wednesday": "10:45 AM - 10:00 PM",
+          "thursday": "10:45 AM - 10:00 PM",
+          "friday": "10:45 AM - 11:00 PM",
+          "saturday": "10:45 AM - 11:00 PM",
+          "sunday": "10:45 AM - 10:00 PM"
+        }
+      },
+      {
+        "id": "baltimore",
+        "name": "Baltimore",
+        "address": "1118 S Charles St",
+        "city": "Baltimore",
+        "state": "MD",
+        "zipCode": "21230",
+        "country": "USA",
+        "status": "operational",
+        "fullAddress": "1118 S Charles St, Baltimore, MD 21230",
+        "googleMapsUrl": "https://maps.app.goo.gl/bN1Uq6yY6wxwf9SS7",
+        "phone": "410-774-6606",
+        "email": "farhanalina55@gmail.com",
+        "coordinates": { "lat": 39.2731, "lng": -76.6108 },
+        "hours": {
+          "monday": "11:00 AM - 11:00 PM",
+          "tuesday": "11:00 AM - 11:00 PM",
+          "wednesday": "11:00 AM - 11:00 PM",
+          "thursday": "11:00 AM - 2:00 AM",
+          "friday": "11:00 AM - 3:00 AM",
+          "saturday": "11:00 AM - 3:00 AM",
+          "sunday": "11:00 AM - 12:00 AM"
+        }
+      },
+      {
+        "id": "connecticut-ave-nw",
+        "name": "Connecticut Ave NW",
+        "address": "5030 Connecticut Ave, NW",
+        "city": "Connecticut Ave NW",
+        "state": "DC",
+        "zipCode": "20008",
+        "country": "USA",
+        "status": "operational",
+        "fullAddress": "5030 Connecticut Ave, NW, Washington DC 20008",
+        "phone": "202-505-8405",
+        "googleMapsUrl": "https://maps.app.goo.gl/Jhstwh4Tt91EbtHi6",
+        "email": "Ahsanmughal0409@gmail.com",
+        "coordinates": { "lat": 38.9584, "lng": -77.0638 },
+        "hours": {
+          "monday": "11:00 AM - 11:00 PM",
+          "tuesday": "11:00 AM - 11:00 PM",
+          "wednesday": "11:00 AM - 11:00 PM",
+          "thursday": "11:00 AM - 11:00 PM",
+          "friday": "11:00 AM - 3:00 AM",
+          "saturday": "11:00 AM - 3:00 AM",
+          "sunday": "12:00 PM - 9:00 PM"
+        }
+      },
+      {
+        "id": "chelmsford",
+        "name": "Chelmsford",
+        "address": "6b Baddow Rd",
+        "city": "Chelmsford",
+        "state": "Essex",
+        "zipCode": "CM2 0DG",
+        "country": "UK",
+        "status": "operational",
+        "fullAddress": "6b Baddow Rd, Chelmsford, Essex, CM2 0DG",
+        "phone": "1245611468",
+        "email": "info@wms-trust.co.uk",
+        "coordinates": { "lat": 51.7356, "lng": 0.4685 },
+        "hours": {
+          "monday": "11:00 AM - 10:00 PM",
+          "tuesday": "11:00 AM - 10:00 PM",
+          "wednesday": "11:00 AM - 10:00 PM",
+          "thursday": "11:00 AM - 10:00 PM",
+          "friday": "11:00 AM - 11:00 PM",
+          "saturday": "11:00 AM - 11:00 PM",
+          "sunday": "12:00 PM - 9:00 PM"
+        }
+      },
+      {
+        "id": "arlington",
+        "name": "Arlington",
+        "city": "Arlington",
+        "state": "VA",
+        "country": "USA",
+        "status": "upcoming",
+        "email": "ahmedrajumd34@gmail.com"
+      },
+      {
+        "id": "alexandria",
+        "name": "Alexandria",
+        "city": "Alexandria",
+        "state": "VA",
+        "country": "USA",
+        "status": "upcoming",
+        "email": "Farhan-mushtaq@hotmail.com"
+      },
+      {
+        "id": "glen-allen",
+        "name": "Glen Allen",
+        "city": "Glen Allen",
+        "state": "VA",
+        "country": "USA",
+        "status": "upcoming",
+        "email": "apanwer@hotmail.com"
+      },
+      {
+        "id": "manassas-park",
+        "name": "Manassas Park",
+        "city": "Manassas Park",
+        "state": "VA",
+        "country": "USA",
+        "status": "upcoming",
+        "email": "srispynestllc@gmail.com"
+      },
+      {
+        "id": "lorton",
+        "name": "Lorton",
+        "city": "Lorton",
+        "state": "VA",
+        "country": "USA",
+        "status": "upcoming",
+        "email": "Akramkhan1991@gmail.com"
+      },
+      {
+        "id": "warrenton",
+        "name": "Warrenton",
+        "city": "Warrenton",
+        "state": "VA",
+        "country": "USA",
+        "status": "upcoming",
+        "email": "Mailtouddin@gmail.com"
+      },
+      {
+        "id": "reston",
+        "name": "Reston",
+        "city": "Reston",
+        "state": "VA",
+        "country": "USA",
+        "status": "upcoming",
+        "email": "nhassan@columbiataxservice.com"
+      },
+      {
+        "id": "woodbridge",
+        "name": "Woodbridge",
+        "city": "Woodbridge",
+        "state": "VA",
+        "country": "USA",
+        "status": "upcoming",
+        "email": "ahmedrajumd34@gmail.com"
+      },
+      {
+        "id": "district-heights",
+        "name": "District Heights",
+        "city": "District Heights",
+        "state": "MD",
+        "country": "USA",
+        "status": "coming_soon",
+        "email": "Eshaan.murad@gmail.com"
+      },
+      {
+        "id": "lanham",
+        "name": "Lanham",
+        "city": "Lanham",
+        "state": "MD",
+        "country": "USA",
+        "status": "coming_soon",
+        "email": "Alpinaali@gmail.com"
+      },
+      {
+        "id": "abingdon",
+        "name": "Abingdon",
+        "city": "Abingdon",
+        "state": "MD",
+        "country": "USA",
+        "status": "coming_soon",
+        "email": "Emtiagrafi@gmail.com"
+      },
+      {
+        "id": "temple-hills",
+        "name": "Temple Hills",
+        "city": "Temple Hills",
+        "state": "MD",
+        "country": "USA",
+        "status": "coming_soon",
+        "email": "kaziarif393@gmail.com"
+      },
+      {
+        "id": "h-st-ne",
+        "name": "H St NE",
+        "city": "H St NE",
+        "state": "DC",
+        "country": "USA",
+        "status": "coming_soon",
+        "email": "Islam100p@gmail.com"
+      },
+      {
+        "id": "michigan-ave-ne",
+        "name": "Michigan Ave NE",
+        "city": "Michigan Ave NE",
+        "state": "DC",
+        "country": "USA",
+        "status": "coming_soon",
+        "email": "basitraj77@gmail.com"
+      },
+      {
+        "id": "southeast",
+        "name": "Southeast",
+        "city": "Southeast",
+        "state": "DC",
+        "country": "USA",
+        "status": "coming_soon",
+        "email": "Patwary4975@icloud.com"
+      }
+    ],
+    "content_themes": {
+      "nashville_hot_chicken": [
+        "authentic Nashville flavors",
+        "heat levels",
+        "spice blends",
+        "crispy coating",
+        "juicy chicken",
+        "signature recipe",
+        "hot and spicy",
+        "southern comfort food",
+        "halal certified chicken",
+        "halal Nashville style"
+      ],
+      "smashed_burgers": [
+        "fresh ground beef",
+        "crispy edges",
+        "melted cheese",
+        "toasted buns",
+        "perfect sear",
+        "juicy patties",
+        "artisan burgers",
+        "premium ingredients",
+        "halal ground beef",
+        "halal burger options"
+      ],
+      "southern_comfort_food": [
+        "authentic southern recipes",
+        "comfort food classics",
+        "home-style cooking",
+        "traditional flavors",
+        "hearty meals",
+        "family recipes",
+        "halal comfort food",
+        "halal southern cuisine"
+      ],
+      "waffle_fries": [
+        "crispy waffle-cut fries",
+        "golden brown",
+        "perfectly seasoned",
+        "signature sides",
+        "loaded options",
+        "made fresh daily",
+        "halal preparation"
+      ],
+      "southern_food": [
+        "southern cuisine",
+        "traditional cooking",
+        "regional specialties",
+        "authentic recipes",
+        "comfort classics",
+        "southern hospitality",
+        "halal southern food",
+        "halal certified ingredients"
+      ],
+      "halal_dining": [
+        "halal certified",
+        "Islamic dietary laws",
+        "halal meat preparation",
+        "family friendly dining",
+        "community focused",
+        "authentic halal flavors",
+        "trusted halal source",
+        "religiously compliant"
+      ]
+    },
+    "seo_keywords": [
+      "Best Chicken Wings",
+      "Best fried Chicken",
+      "Best Nashville Sandwiches",
+      "Best Smashed Burgers",
+      "Best Chicken Tenders",
+      "Craft Mocktails",
+      "Family Friendly restaurant",
+      "Fast Food",
+      "Finger Licking Fried Chicken",
+      "Gourmet Burgers Restaurant",
+      "Best Halal Restaurant",
+      "Halal Burgers",
+      "Halal Fried Chicken",
+      "Halal American Restaurant",
+      "Halal Desi Restaurant",
+      "Best in Town Fried chicken & Burgers",
+      "Dine in & Takeout Restaurant",
+      "Open Till Late",
+      "Quick Bites",
+      "Best Milk Shakes",
+      "Best waffles in town"
+    ],
+    "db_path": "generated_blogs.db",
+    "output_paths": {
+      "react_app": "src/core/Blogs/Templates/LocalSEO",
+      "dist": "dist/blogs/nash-and-smashed/json",
+      "backup": "backup/blogs/nash-and-smashed",
+      "sitemap": "dist/sitemaps"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+/* src/styles/global/headers.css */
+.image-masonry {
+  @apply rounded-lg w-full;
+}

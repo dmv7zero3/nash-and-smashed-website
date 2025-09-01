@@ -1,0 +1,1 @@
+You're already using redirects correctly—but don’t forget to include <link rel="canonical" href="https://nashandsmashed.com/..."> in the <head> section of your HTML templates. This reinforces your preferred domain for SEO.

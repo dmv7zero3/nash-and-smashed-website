@@ -1,0 +1,115 @@
+/* /src/styles/fonts.css */
+
+@font-face {
+  font-family: "Copyduck";
+  src: url("../core/Fonts/Copyduck/Copyduck.otf") format("opentype"),
+    url("../core/Fonts/Copyduck/Copyduck.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cosmic Lager";
+  src: url("../core/Fonts/CosmicLager/CosmicLager-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Open Sans Font Declarations - Option 1: Variable Font (recommended for performance) */
+@font-face {
+  font-family: "open-sans";
+  src: url("../core/Fonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf")
+    format("truetype-variations");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Option 2: Individual weights (fallback) */
+@font-face {
+  font-family: "open-sans-static";
+  src: url("../core/Fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "open-sans-static";
+  src: url("../core/Fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font Classes for Open Sans */
+.open-sans {
+  font-family: "open-sans", "open-sans-static", sans-serif;
+}
+
+.cosmic-lager {
+  font-family: "Cosmic Lager", sans-serif;
+}
+
+.open-sans-bold {
+  font-family: "open-sans", "open-sans-static", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.open-sans-medium {
+  font-family: "open-sans", "open-sans-static", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.open-sans-semibold {
+  font-family: "open-sans", "open-sans-static", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.copyduck {
+  font-family: "Copyduck", sans-serif;
+}
+
+p {
+  @apply open-sans font-bold;
+}
+
+/* h1 */
+h1.american {
+  @apply text-6xl font-bold cosmic-lager tracking-wide;
+}
+
+h2.american {
+  @apply text-5xl font-bold cosmic-lager;
+}
+
+h2.american-sml {
+  @apply text-3xl font-bold cosmic-lager;
+}
+
+h2.american-xs {
+  @apply text-2xl font-bold cosmic-lager;
+}
+
+.faq-title {
+  @apply text-3xl font-bold cosmic-lager leading-snug;
+}
+
+.faq-paragraph {
+  @apply text-lg font-bold open-sans leading-relaxed;
+}
+
+p.american,
+.american li {
+  @apply text-xl open-sans;
+}
+
+p.american-sm {
+  @apply text-xl open-sans;
+}

@@ -1,0 +1,14 @@
+.gallery-container {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .gallery-container {
+    animation: scroll 17s linear infinite;
+  }
+}
+
+.gallery-img {
+  @apply w-[210px] h-[210px] md:w-[275px] md:h-[275px] object-cover;
+  aspect-ratio: 1 / 1;
+}

@@ -1,0 +1,39 @@
+/* src/styles/index.css */
+@import "./critical.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./colors.css";
+@import "./fonts.css";
+@import "./reset.css";
+@import "./buttons.css";
+@import "./forms.css";
+@import "./flipImg.css";
+@import "./gradients.css";
+@import "./headers.css";
+@import "./imageMasonry.css";
+@import "./menu.css";
+@import "./paragraph.css";
+@import "./swiper.css";
+@import "./sliderImgGallery.css";
+@import "./ticker.css";
+@import "./rotatationAnime.css";
+
+@layer components {
+  .font-halyard {
+    font-family: "halyard-micro", sans-serif;
+  }
+
+  .font-space-mono {
+    font-family: "space-mono", monospace;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+}

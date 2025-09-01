@@ -1,0 +1,482 @@
+// src/core/constants/menuItems.ts
+// Represents a size or option for a menu item (e.g., "Single Smash", "Meal", etc.)
+export interface MenuItemSize {
+  name: string;
+  price: number;
+}
+
+// Represents a customizable option for a menu item (e.g., heat levels)
+export interface CustomizableOption {
+  heatLevels?: string[];
+}
+
+// Represents a standard menu item with optional sizes or options
+export interface MenuItem {
+  name: string;
+  description: string;
+  image: string;
+  price?: number;
+  sizes?: MenuItemSize[];
+  options?: MenuItemSize[];
+  customizable?: CustomizableOption;
+  includes?: string[];
+  size?: string; // For cakes
+}
+
+// Represents a menu category (e.g., Smashed Burgers, Sides, etc.)
+export interface MenuCategory {
+  menuCategory: string;
+  categoryDescription: string;
+  items: MenuItem[];
+}
+
+// Represents dietary information for the menu
+export interface DietaryInfo {
+  halalCertified: boolean;
+  vegetarianOptions: string[];
+  allergenInfo: string;
+}
+
+// Represents the full menu structure
+export interface MenuItems {
+  menuCategory: string;
+  categoryDescription: string;
+  items: MenuItem[];
+  dietaryInfo: DietaryInfo;
+  sandwiches: MenuCategory;
+  sides: MenuCategory;
+  friedGoodness: MenuCategory;
+  familyBuckets: MenuCategory;
+  kidsMeal: MenuCategory;
+  dippingSauce: MenuCategory;
+  cakes: MenuCategory;
+}
+
+// The actual menu data
+export const MENU_ITEMS: MenuItems = {
+  menuCategory: "Smashed Burgers",
+  categoryDescription:
+    "Juicy, flavorful and perfectly smashed, our burgers are mouthwatering explosion of taste that will leave you wanting another bite.",
+  items: [
+    {
+      name: "The Classic Bull Burger",
+      description:
+        "Beef patties with melted American cheese, tomato slices, Pickles, lettuce and our signature smashed sauce.",
+      image: "classic_bull_burger.jpg",
+      sizes: [
+        { name: "Single Smash", price: 6.99 },
+        { name: "Double Smash", price: 9.99 },
+        { name: "Triple Smash", price: 12.99 },
+        { name: "Quadruple Smash", price: 15.99 },
+      ],
+    },
+    {
+      name: "Farm House Burger",
+      description:
+        "Beef patties with a fried egg, American cheese, tomato, onion strings, lettuce and our signature smashed sauce.",
+      image: "farm_house_burger.jpg",
+      sizes: [
+        { name: "Single Smash", price: 7.49 },
+        { name: "Double Smash", price: 10.49 },
+        { name: "Triple Smash", price: 13.49 },
+        { name: "Quadruple Smash", price: 16.49 },
+      ],
+    },
+    {
+      name: "Mushroom Meltdown Burger",
+      description:
+        "Beef patties sautéed mushrooms, smashed sauce, tomato, American cheese, onion strings and lettuce.",
+      image: "mushroom_meltdown_burger.jpg",
+      sizes: [
+        { name: "Single Smash", price: 7.49 },
+        { name: "Double Smash", price: 10.49 },
+        { name: "Triple Smash", price: 13.49 },
+        { name: "Quadruple Smash", price: 16.49 },
+      ],
+    },
+    {
+      name: "The Beast Burger",
+      description:
+        "Beef patties, turkey bacon, onion strings, pickles, American cheese, lettuce, tomato and smashed sauce.",
+      image: "the_beast_burger.jpg",
+      sizes: [
+        { name: "Single Smash", price: 8.99 },
+        { name: "Double Smash", price: 11.99 },
+        { name: "Triple Smash", price: 14.99 },
+        { name: "Quadruple Smash", price: 17.99 },
+      ],
+    },
+    {
+      name: "Meatless Pea Protein",
+      description:
+        "Enjoy our classic Plant-Based Smash Burger, complete with melted American cheese, crisp lettuce, tangy pickles, fresh sliced tomatoes, and our signature smashed sauce.",
+      image: "meatless_pea_protein_burger.jpg",
+      sizes: [
+        { name: "Single Smash 2.5oz", price: 7.49 },
+        { name: "Double Smash 5 oz", price: 10.49 },
+        { name: "Triple Smash (7.5 oz)", price: 13.49 },
+        { name: "Quadruple Smash (10 oz)", price: 16.49 },
+      ],
+    },
+  ],
+  dietaryInfo: {
+    halalCertified: true,
+    vegetarianOptions: ["Meatless Pea Protein"],
+    allergenInfo:
+      "All burgers may contain dairy, gluten, and soy. Please inform staff of any allergies.",
+  },
+  sandwiches: {
+    menuCategory: "Sandwiches",
+    categoryDescription:
+      "Hand-breaded sandwiches, featuring crispy, golden coatings that add a delightful crunch to every bite.",
+    items: [
+      {
+        name: "Golden Crunch Sandwich",
+        description: "Crispy chicken, lettuce, signature sauce, golden buns",
+        price: 6.99,
+        image: "golden_crunch_sandwich.jpg",
+      },
+      {
+        name: "Original Nashville Sandwich",
+        description:
+          "Nashville chicken, signature Nashville sauce, pickles and house slaw. Choose you heat level.",
+        price: 7.99,
+        image: "original_nashville_sandwich.jpg",
+        customizable: {
+          heatLevels: ["Mild", "Medium", "Hot", "Extra Hot"],
+        },
+      },
+      {
+        name: "Honey Butter Buzz Sandwich",
+        description:
+          "Nashville chicken, honey butter, American cheese, signature sauce",
+        price: 8.99,
+        image: "honey_butter_buzz_sandwich.jpg",
+      },
+      {
+        name: "Nash & Smashed Sandwich",
+        description:
+          "Smashed beef patty topped with Nashville-style chicken, crispy onion strings, fresh lettuce and melted American cheese, all perfectly seasoned and served on a toasted bun.",
+        price: 10.89,
+        image: "nash_and_smashed_sandwich.jpg",
+      },
+      {
+        name: "Oh My Thigh",
+        description:
+          "Classic Chicken Thigh, Brioche bun, Chili Garlic Sauce, Freshly Sliced Lettuce & Signature Sauce.",
+        price: 6.99,
+        image: "oh_my_thigh_sandwich.jpg",
+      },
+    ],
+  },
+  sides: {
+    menuCategory: "Sides",
+    categoryDescription: "Perfect accompaniments to complete your meal.",
+    items: [
+      {
+        name: "Waffle Fries",
+        description: "Fries",
+        image: "waffle_fries.jpg",
+        sizes: [
+          { name: "Regular", price: 4.49 },
+          { name: "Large", price: 6.49 },
+        ],
+      },
+      {
+        name: "Mac & Cheese",
+        description: "Mac & Cheese",
+        image: "mac_and_cheese.jpg",
+        sizes: [
+          { name: "Regular", price: 4.49 },
+          { name: "Large", price: 6.49 },
+        ],
+      },
+      {
+        name: "Cole-slaw",
+        description: "Coleslaw",
+        image: "coleslaw.jpg",
+        sizes: [
+          { name: "Regular", price: 4.49 },
+          { name: "Large", price: 6.49 },
+        ],
+      },
+      {
+        name: "Mashed Potatoes",
+        description: "Mashed Potatoes",
+        image: "mashed_potatoes.jpg",
+        sizes: [
+          { name: "Regular", price: 4.49 },
+          { name: "Large", price: 6.49 },
+        ],
+      },
+      {
+        name: "Grilled Sweet Corn",
+        description: "In a cup",
+        image: "grilled_sweet_corn.jpg",
+        sizes: [
+          { name: "Regular", price: 4.49 },
+          { name: "Large", price: 6.49 },
+        ],
+      },
+      {
+        name: "Corn Bread",
+        description: "Corn Bread",
+        image: "corn_bread.jpg",
+        sizes: [
+          { name: "Corn Bread (1 pc)", price: 1.79 },
+          { name: "Corn Bread (2 pcs)", price: 3.49 },
+        ],
+      },
+    ],
+  },
+  friedGoodness: {
+    menuCategory: "Fried Goodness",
+    categoryDescription:
+      "Experience the artisanal touch of our hand-breaded creations, where each morsel is lovingly coated in a crispy, flavorful crust for an elevated dining experience.",
+    items: [
+      {
+        name: "2 pcs Fried Chicken (Leg & Thigh)",
+        description: "2 pcs Fried Chicken (Leg & Thigh)",
+        image: "2pcs_fried_chicken_leg_thigh.jpg",
+        options: [
+          { name: "On Its Own", price: 6.79 },
+          { name: "Meal", price: 11.79 },
+        ],
+      },
+      {
+        name: "2 pcs Fried Chicken (Breast & Wing)",
+        description: "2 Pcs Fried Chicken (Breast & Wing)",
+        image: "2pcs_fried_chicken_breast_wing.jpg",
+        options: [
+          { name: "On Its Own", price: 7.49 },
+          { name: "Meal", price: 12.49 },
+        ],
+      },
+      {
+        name: "3 pcs Fried Chicken",
+        description: "Leg, thigh & wing",
+        image: "3pcs_fried_chicken.jpg",
+        options: [
+          { name: "On Its Own", price: 9.99 },
+          { name: "Meal", price: 14.99 },
+        ],
+      },
+      {
+        name: "4 pcs Fried Chicken",
+        description: "4 pcs Fried Chicken",
+        image: "4pcs_fried_chicken.jpg",
+        options: [
+          { name: "On Its Own", price: 12.99 },
+          { name: "Meal", price: 17.99 },
+        ],
+      },
+      {
+        name: "3 pcs Chicken Tenders",
+        description: "3 pcs Chicken Tenders",
+        image: "3pcs_chicken_tenders.jpg",
+        options: [
+          { name: "On Its Own", price: 8.79 },
+          { name: "Meal", price: 13.79 },
+        ],
+      },
+      {
+        name: "4 pcs Chicken Tenders",
+        description: "4 pcs Chicken Tenders",
+        image: "4pcs_chicken_tenders.jpg",
+        options: [
+          { name: "On Its Own", price: 10.99 },
+          { name: "Meal", price: 15.99 },
+        ],
+      },
+      {
+        name: "5 pcs Chicken Tenders",
+        description: "5 pcs Chicken Tenders",
+        image: "5pcs_chicken_tenders.jpg",
+        options: [
+          { name: "On Its Own", price: 13.99 },
+          { name: "Meal", price: 18.99 },
+        ],
+      },
+      {
+        name: "Chicken Bites 12 pcs",
+        description: "12 pcs Chicken Bites",
+        image: "chicken_bites_12pcs.jpg",
+        options: [
+          { name: "On Its Own", price: 8.99 },
+          { name: "Meal", price: 13.99 },
+        ],
+      },
+      {
+        name: "5 pcs Crispy Party Wings",
+        description: "5 pcs Crispy Party Wings",
+        image: "5pcs_crispy_party_wings.jpg",
+        options: [
+          { name: "On Its Own", price: 8.99 },
+          { name: "Meal", price: 13.99 },
+        ],
+      },
+    ],
+  },
+  familyBuckets: {
+    menuCategory: "Family Buckets",
+    categoryDescription:
+      "Share the joy of a bountiful feast with our family bucket, filled with an assortment of mouthwatering favorites that will bring everyone together around the table.",
+    items: [
+      {
+        name: "Chicken Bucket # A",
+        description: "Chicken Bucket # A",
+        image: "chicken_bucket_a.jpg",
+        sizes: [
+          { name: "8 pcs", price: 21.99 },
+          { name: "12 pcs", price: 29.99 },
+          { name: "16 pcs", price: 39.99 },
+        ],
+      },
+      {
+        name: "Tenders Bucket # B",
+        description: "Tenders Bucket # B",
+        image: "tenders_bucket_b.jpg",
+        sizes: [
+          { name: "12 pcs", price: 25.99 },
+          { name: "16 pcs", price: 33.99 },
+          { name: "20 pcs", price: 39.99 },
+        ],
+      },
+      {
+        name: "PARTY Wings Bucket # C",
+        description: "PARTY Wings Bucket # C",
+        image: "party_wings_bucket_c.jpg",
+        sizes: [
+          { name: "12 pcs", price: 19.99 },
+          { name: "16 pcs", price: 24.99 },
+          { name: "20 pcs", price: 29.99 },
+        ],
+      },
+      {
+        name: "Chicken Bites Bucket # D",
+        description: "Chicken Bites Bucket # D",
+        image: "chicken_bites_bucket_d.jpg",
+        sizes: [
+          { name: "30 pcs", price: 19.99 },
+          { name: "50 pcs", price: 29.99 },
+        ],
+      },
+    ],
+  },
+  kidsMeal: {
+    menuCategory: "Kids Meal",
+    categoryDescription:
+      "Kid-friendly meals designed to please young appetites.",
+    items: [
+      {
+        name: "6 pcs Chicken Bites Meal (With Toy)",
+        description: "Served with a drink, a choice of side, and a kids toy.",
+        price: 5.99,
+        image: "kids_chicken_bites_meal.jpg",
+        includes: ["drink", "choice of side", "kids toy"],
+      },
+      {
+        name: "Crispy Sandwich Meal (With Toy)",
+        description: "Served with a drink, a choice of side, and a kids toy.",
+        price: 7.99,
+        image: "kids_crispy_sandwich_meal.jpg",
+        includes: ["drink", "choice of side", "kids toy"],
+      },
+      {
+        name: "Cheeseburger Meal (With Toy)",
+        description: "Served with a drink, a choice of side, and a kids toy.",
+        price: 7.99,
+        image: "kids_cheeseburger_meal.jpg",
+        includes: ["drink", "choice of side", "kids toy"],
+      },
+      {
+        name: "Chicken Tenders Meal (With Toy)",
+        description: "Served with a drink, a choice of side, and a kids toy.",
+        price: 8.99,
+        image: "kids_chicken_tenders_meal.jpg",
+        includes: ["drink", "choice of side", "kids toy"],
+      },
+    ],
+  },
+  dippingSauce: {
+    menuCategory: "Dipping Sauce",
+    categoryDescription: "Perfect sauces to complement your meal.",
+    items: [
+      {
+        name: "N&S Signature Sauce",
+        description: "N&S Signature Sauce",
+        image: "ns_signature_sauce.jpg",
+        sizes: [
+          { name: "1oz", price: 0.79 },
+          { name: "8oz", price: 4.99 },
+        ],
+      },
+      {
+        name: "Honey Sriracha",
+        description: "Honey Sriracha",
+        image: "honey_sriracha.jpg",
+        sizes: [
+          { name: "1oz", price: 0.79 },
+          { name: "8oz", price: 4.99 },
+        ],
+      },
+      {
+        name: "Buffalo Sauce",
+        description: "Buffalo Sauce",
+        image: "buffalo_sauce.jpg",
+        sizes: [
+          { name: "1oz", price: 0.79 },
+          { name: "8oz", price: 4.99 },
+        ],
+      },
+      {
+        name: "Garlic Pepper Sauce",
+        description: "Garlic Pepper Sauce",
+        image: "garlic_pepper_sauce.jpg",
+        sizes: [
+          { name: "1oz", price: 0.79 },
+          { name: "8oz", price: 4.99 },
+        ],
+      },
+      {
+        name: "Garlic Parmesan",
+        description: "Garlic Parmesan",
+        image: "garlic_parmesan.jpg",
+        sizes: [
+          { name: "1oz", price: 0.79 },
+          { name: "8oz", price: 4.99 },
+        ],
+      },
+      {
+        name: "BBQ Sauce",
+        description: "BBQ Sauce",
+        image: "bbq_sauce.jpg",
+        sizes: [
+          { name: "1oz", price: 0.79 },
+          { name: "8oz", price: 4.99 },
+        ],
+      },
+    ],
+  },
+  cakes: {
+    menuCategory: "Cakes",
+    categoryDescription:
+      "Treat yourself to our exquisite selection of cakes that are sure to satisfy your sweet tooth.",
+    items: [
+      {
+        name: "Bistro Lime Fusion",
+        description: "2.8 oz",
+        price: 4.99,
+        image: "bistro_lime_fusion.jpg",
+        size: "2.8 oz",
+      },
+      {
+        name: "Choco Dream Cream Pie",
+        description: "3.1 oz",
+        price: 4.99,
+        image: "choco_dream_cream_pie.jpg",
+        size: "3.1 oz",
+      },
+    ],
+  },
+};

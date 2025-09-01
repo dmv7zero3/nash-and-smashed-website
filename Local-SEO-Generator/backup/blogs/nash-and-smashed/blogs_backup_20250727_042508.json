@@ -1,0 +1,48 @@
+{
+  "business_id": "nash-and-smashed",
+  "timestamp": "20250727_042508",
+  "count": 2,
+  "export_date": "2025-07-27T04:25:08.272573",
+  "blogs": [
+    {
+      "id": 2,
+      "businessId": "nash-and-smashed",
+      "title": "Best Halal American Restaurant in Hampton, VA | Nash & Smashed",
+      "url": "halal-american-restaurant/hampton-va",
+      "metaDescription": "Discover the best Halal American Restaurant in Hampton, VA at Nash & Smashed. Fresh ingredients, bold flavors, and authentic recipes. Order online for delivery or pickup today!",
+      "introParagraph": "Halal American Restaurant in Hampton, VA, welcome to Nash & Smashed! We ARE excited to bring our unique blend of Nashville hot chicken and smashed burgers to this vibrant community. Located conveniently at 36 Coliseum Xing, our restaurant offers a modern twist on classic comfort food that's sure to satisfy your cravings. With multiple locations across Virginia, Maryland, and Washington DC, we've perfected the art of quality ingredients and signature spice blends that set us apart from the rest.",
+      "middleParagraph": "At Nash & Smashed, our commitment to quality shines through in every aspect of our restaurant. We take pride in sourcing the freshest ingredients, carefully selected to ensure maximum flavor and nutrition. Our chefs meticulously prepare each dish, balancing spices and seasonings to create a truly exceptional taste experience that will leave you wanting more. What sets us apart is our dedication to incorporating halal standards into every menu item, catering to the diverse dietary needs of our community while maintaining the same high-quality standards we're known for. From our signature Nashville hot chicken to our smashed burgers, each dish is carefully crafted to meet our strict quality control measures, ensuring that every bite is not only delicious but also safe and authentic.",
+      "conclusionParagraph": "As you've fallen in love with Nash & Smashed's unique blend of flavors, we invite you to take your taste buds on a culinary journey. Visit us today at 36 Coliseum Xing in Hampton, VA, or order online to experience our handcrafted dishes for yourself! Don't wait - call us now at 757-347-0717 to place your order and indulge in the perfect blend of quality, flavor, and comfort food that will leave you craving more.",
+      "keyword": "Halal American Restaurant",
+      "location": "Hampton VA",
+      "city": "Hampton",
+      "state": "VA",
+      "location_status": "operational",
+      "phone": "757-347-0717",
+      "address": "36 Coliseum Xing",
+      "created_at": "2025-07-27T04:25:06.261693",
+      "updated_at": "2025-07-27T04:25:06.261731",
+      "word_count": 277
+    },
+    {
+      "id": 1,
+      "businessId": "nash-and-smashed",
+      "title": "Dine in & Takeout Restaurant Coming to Dumfries, VA | Nash & Smashed",
+      "url": "dine-in-takeout-restaurant/dumfries-va",
+      "metaDescription": "Nash & Smashed is coming to Dumfries, VA! Get ready for authentic Dine in & Takeout Restaurant with bold flavors and premium ingredients. Opening soon!",
+      "introParagraph": "Dine in & Takeout Restaurant coming to Dumfries! We are thrilled to announce that Nash & Smashed is set to bring its signature Nashville hot chicken and smashed burgers to the vibrant town of Dumfries, VA! As one of Virginia's most beloved comfort food destinations, we can't wait to share our passion for quality ingredients, bold flavors, and modern twists on classic favorites with you. Get ready to indulge in our crispy, spicy goodness and succulent, smashed patties - WE WILL be opening soon, and the anticipation is building!",
+      "middleParagraph": "When Nash & Smashed Dumfries finally opens its doors, customers can expect an immersive dining experience that combines traditional comfort food with modern flair. Our dine-in and takeout restaurant will offer a wide variety of menu items, including our signature Nashville hot chicken and smashed burgers, all crafted with the highest quality ingredients to ensure unparalleled flavor. From classic comfort food favorites to innovative twists on timeless dishes, every bite promises to be a delight for the senses. As we prepare to bring our unique brand of mouth-watering cuisine to Dumfries, our commitment to using only the freshest ingredients and adhering to traditional cooking methods will shine through in every dish that leaves our kitchen.",
+      "conclusionParagraph": "Get ready to experience the ultimate destination in Dumfries, VA! Nash & Smashed is revolutionizing the culinary scene, bringing a fusion of flavors and vibes that will leave you wanting more. Stay tuned for our grand opening announcement - subscribe to our updates by emailing us at Shohrab61@yahoo.com and be among the first to know when we're ready to serve up a storm!",
+      "keyword": "Dine in & Takeout Restaurant",
+      "location": "Dumfries VA",
+      "city": "Dumfries",
+      "state": "VA",
+      "location_status": "active",
+      "phone": "571-370-5177",
+      "address": "3934 Fettler Park Dr",
+      "created_at": "2025-07-27T04:19:06.185907",
+      "updated_at": "2025-07-27T04:19:06.186186",
+      "word_count": 267
+    }
+  ]
+}

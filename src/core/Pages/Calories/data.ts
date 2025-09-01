@@ -1,0 +1,242 @@
+export interface NutritionItem {
+  name: string;
+  calories: number;
+  totalFat: number;
+  saturatedFat: number;
+  transFat: number;
+  cholesterol: number;
+  sodium: number;
+  carbs: number;
+  fiber: number;
+  sugar: number;
+  protein: number;
+}
+
+export interface NutritionCategory {
+  category: string;
+  items: NutritionItem[];
+}
+
+// Sample data - to be replaced with actual nutritional information
+export const nutritionData: NutritionCategory[] = [
+  {
+    category: "Nashville Style Sandwiches",
+    items: [
+      {
+        name: "Classic Nashville Hot Chicken Sandwich",
+        calories: 550,
+        totalFat: 22,
+        saturatedFat: 4.5,
+        transFat: 0,
+        cholesterol: 65,
+        sodium: 1350,
+        carbs: 56,
+        fiber: 3,
+        sugar: 6,
+        protein: 28,
+      },
+      {
+        name: "Extra Hot Nashville Chicken Sandwich",
+        calories: 570,
+        totalFat: 24,
+        saturatedFat: 4.5,
+        transFat: 0,
+        cholesterol: 65,
+        sodium: 1450,
+        carbs: 56,
+        fiber: 3,
+        sugar: 6,
+        protein: 28,
+      },
+      {
+        name: "Mild Nashville Chicken Sandwich",
+        calories: 540,
+        totalFat: 21,
+        saturatedFat: 4,
+        transFat: 0,
+        cholesterol: 65,
+        sodium: 1200,
+        carbs: 56,
+        fiber: 3,
+        sugar: 6,
+        protein: 28,
+      },
+    ],
+  },
+  {
+    category: "Smashed Burgers",
+    items: [
+      {
+        name: "Classic Smash Burger (Single)",
+        calories: 610,
+        totalFat: 38,
+        saturatedFat: 14,
+        transFat: 0.5,
+        cholesterol: 95,
+        sodium: 980,
+        carbs: 38,
+        fiber: 2,
+        sugar: 8,
+        protein: 30,
+      },
+      {
+        name: "Double Smash Burger",
+        calories: 850,
+        totalFat: 56,
+        saturatedFat: 24,
+        transFat: 1,
+        cholesterol: 190,
+        sodium: 1250,
+        carbs: 38,
+        fiber: 2,
+        sugar: 8,
+        protein: 52,
+      },
+      {
+        name: "Cheese Smash Burger",
+        calories: 680,
+        totalFat: 44,
+        saturatedFat: 18,
+        transFat: 0.5,
+        cholesterol: 115,
+        sodium: 1200,
+        carbs: 38,
+        fiber: 2,
+        sugar: 8,
+        protein: 34,
+      },
+    ],
+  },
+  {
+    category: "Fried Chicken",
+    items: [
+      {
+        name: "3-Piece Chicken Tenders",
+        calories: 380,
+        totalFat: 18,
+        saturatedFat: 3,
+        transFat: 0,
+        cholesterol: 70,
+        sodium: 890,
+        carbs: 28,
+        fiber: 1,
+        sugar: 0,
+        protein: 26,
+      },
+      {
+        name: "5-Piece Chicken Tenders",
+        calories: 630,
+        totalFat: 30,
+        saturatedFat: 5,
+        transFat: 0,
+        cholesterol: 115,
+        sodium: 1480,
+        carbs: 46,
+        fiber: 1.5,
+        sugar: 0,
+        protein: 43,
+      },
+      {
+        name: "Nashville Hot Chicken Piece (Leg)",
+        calories: 210,
+        totalFat: 14,
+        saturatedFat: 3,
+        transFat: 0,
+        cholesterol: 80,
+        sodium: 550,
+        carbs: 6,
+        fiber: 0,
+        sugar: 0,
+        protein: 18,
+      },
+    ],
+  },
+  {
+    category: "Sides",
+    items: [
+      {
+        name: "Waffle Fries (Regular)",
+        calories: 320,
+        totalFat: 16,
+        saturatedFat: 2.5,
+        transFat: 0,
+        cholesterol: 0,
+        sodium: 450,
+        carbs: 42,
+        fiber: 4,
+        sugar: 0,
+        protein: 4,
+      },
+      {
+        name: "Mac & Cheese",
+        calories: 310,
+        totalFat: 18,
+        saturatedFat: 8,
+        transFat: 0,
+        cholesterol: 35,
+        sodium: 760,
+        carbs: 26,
+        fiber: 1,
+        sugar: 3,
+        protein: 12,
+      },
+      {
+        name: "Coleslaw",
+        calories: 180,
+        totalFat: 14,
+        saturatedFat: 2,
+        transFat: 0,
+        cholesterol: 10,
+        sodium: 340,
+        carbs: 14,
+        fiber: 2,
+        sugar: 10,
+        protein: 1,
+      },
+    ],
+  },
+  {
+    category: "Mocktails",
+    items: [
+      {
+        name: "Berry Blast Mocktail",
+        calories: 120,
+        totalFat: 0,
+        saturatedFat: 0,
+        transFat: 0,
+        cholesterol: 0,
+        sodium: 20,
+        carbs: 30,
+        fiber: 0,
+        sugar: 28,
+        protein: 0,
+      },
+      {
+        name: "Citrus Refresher",
+        calories: 110,
+        totalFat: 0,
+        saturatedFat: 0,
+        transFat: 0,
+        cholesterol: 0,
+        sodium: 15,
+        carbs: 28,
+        fiber: 0,
+        sugar: 26,
+        protein: 0,
+      },
+      {
+        name: "Southern Sweet Tea",
+        calories: 90,
+        totalFat: 0,
+        saturatedFat: 0,
+        transFat: 0,
+        cholesterol: 0,
+        sodium: 10,
+        carbs: 24,
+        fiber: 0,
+        sugar: 24,
+        protein: 0,
+      },
+    ],
+  },
+];

@@ -1,0 +1,48 @@
+/* Critical styles needed for above-the-fold content */
+.bg-lightning-yellow {
+  background-color: #fdc615;
+}
+
+/* Text colors */
+.text-dark-olive-bark {
+  color: #4d3d0b;
+}
+
+/* Basic layout styles for the banner */
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.lg\:pt-16 {
+  padding-top: 4rem;
+}
+
+.lg\:pb-24 {
+  padding-bottom: 6rem;
+}
+
+/* Font styles */
+.font-black {
+  font-weight: 900;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.md\:text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.lg\:text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+/* Add your dynapuff and open-sans font declarations here */

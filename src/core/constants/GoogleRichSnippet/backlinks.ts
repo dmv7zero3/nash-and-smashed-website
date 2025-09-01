@@ -1,0 +1,23 @@
+// Supplemental backlinks for Nash & Smashed (excluding primary media links)
+export const BACKLINKS: string[] = [
+  "https://www.seamless.com/menu/nash--smash-12853-galveston-ct-manassas/8698952",
+  "https://www.reddit.com/r/SilverSpring/comments/1ifl9iu/nash_smash_at_4_corners_is_a_hit/",
+  "https://www.arlnow.com/2025/07/31/fried-chicken-and-burger-chain-nash-and-smashed-coming-to-arlington/",
+  "https://www.seamless.com/menu/nash--smashed-3934-fettler-park-dr-dumfries/10726696",
+  "https://www.nbcwashington.com/news/local/nash-and-smashed-manassas-restaurant-opening/",
+  "https://m.yelp.com/biz/nash-and-smash-manassas-2",
+  "https://www.yelp.com/biz/nash-and-smashed-manassas-3",
+  "https://www.mapquest.com/us/maryland/nash-smashed-776590410",
+  "https://www.grubhub.com/restaurant/nash--smashed-1118-s-charles-st-baltimore/11171024",
+  "https://www.mapquest.com/us/virginia/nash-smashed-660328391",
+  "https://postmates.com/store/nash-%26-smashed/hYWIkH38WZ6qLEwZuz32gQ",
+  "https://www.reddit.com/r/SilverSpring/comments/1k9wvu4/nash_smashed_roaming_rooster/",
+  "https://www.ubereats.com/store/nash-%26-smash-manassas/ZnHyLK7lW5Kyrtw66KrxQA?srsltid=AfmBOop3Xk-xhtxVndzXrH1cdUTo4M_yAMGzSeX-JfvthXO3oxAOMplz",
+  "https://www.doordash.com/store/nash-&-smashed-33549017/?srsltid=AfmBOoqsnjqV83uqstYhNKqX7OLOiyP13-Ex7s-kvMmEi5LsWGHR6f0a",
+  "https://www.tiktok.com/discover/nash-and-smash-manassas",
+  "https://theburn.com/2024/01/23/nash-smash-planning-ashburn-herndon-restaurants/",
+  "https://postmates.com/store/nash-%26-smash-manassas/ZnHyLK7lW5Kyrtw66KrxQA",
+  "https://dev.tny.ws/trendingentertainment-fone68/nash-and-smash/",
+  "https://www.arlnow.com/2025/07/30/notice-virginia-abc-permit-application-by-arlington-1983-llc-2/",
+  "https://www.yahoo.com/news/nash-smashed-hot-chicken-chain-204500653.html",
+];

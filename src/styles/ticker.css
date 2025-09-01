@@ -1,0 +1,3 @@
+#banner-ticker p {
+  @apply min-w-[175px]  md:min-w-[250px] text-center;
+}

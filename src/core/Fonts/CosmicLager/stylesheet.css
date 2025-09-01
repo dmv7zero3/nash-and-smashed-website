@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Cosmic Lager Rough Shadow';
+    src: url('CosmicLagerRough-Shadow.eot');
+    src: local('Cosmic Lager Rough Shadow'), local('CosmicLagerRough-Shadow'),
+        url('CosmicLagerRough-Shadow.eot?#iefix') format('embedded-opentype'),
+        url('CosmicLagerRough-Shadow.woff2') format('woff2'),
+        url('CosmicLagerRough-Shadow.woff') format('woff'),
+        url('CosmicLagerRough-Shadow.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cosmic Lager Texture';
+    src: url('CosmicLager-Texture.eot');
+    src: local('Cosmic Lager Texture'), local('CosmicLager-Texture'),
+        url('CosmicLager-Texture.eot?#iefix') format('embedded-opentype'),
+        url('CosmicLager-Texture.woff2') format('woff2'),
+        url('CosmicLager-Texture.woff') format('woff'),
+        url('CosmicLager-Texture.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cosmic Lager Rough';
+    src: url('CosmicLagerRough-Regular.eot');
+    src: local('Cosmic Lager Rough Regular'), local('CosmicLagerRough-Regular'),
+        url('CosmicLagerRough-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CosmicLagerRough-Regular.woff2') format('woff2'),
+        url('CosmicLagerRough-Regular.woff') format('woff'),
+        url('CosmicLagerRough-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cosmic Lager Rough Shadow TX';
+    src: url('CosmicLagerRough-ShadowTX.eot');
+    src: local('Cosmic Lager Rough Shadow TX'), local('CosmicLagerRough-ShadowTX'),
+        url('CosmicLagerRough-ShadowTX.eot?#iefix') format('embedded-opentype'),
+        url('CosmicLagerRough-ShadowTX.woff2') format('woff2'),
+        url('CosmicLagerRough-ShadowTX.woff') format('woff'),
+        url('CosmicLagerRough-ShadowTX.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cosmic Lager Shadow';
+    src: url('CosmicLager-Shadow.eot');
+    src: local('Cosmic Lager Shadow'), local('CosmicLager-Shadow'),
+        url('CosmicLager-Shadow.eot?#iefix') format('embedded-opentype'),
+        url('CosmicLager-Shadow.woff2') format('woff2'),
+        url('CosmicLager-Shadow.woff') format('woff'),
+        url('CosmicLager-Shadow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cosmic Lager Shadow TX';
+    src: url('CosmicLager-ShadowTX.eot');
+    src: local('Cosmic Lager Shadow TX'), local('CosmicLager-ShadowTX'),
+        url('CosmicLager-ShadowTX.eot?#iefix') format('embedded-opentype'),
+        url('CosmicLager-ShadowTX.woff2') format('woff2'),
+        url('CosmicLager-ShadowTX.woff') format('woff'),
+        url('CosmicLager-ShadowTX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cosmic Lager Rough Texture';
+    src: url('CosmicLagerRough-Texture.eot');
+    src: local('Cosmic Lager Rough Texture'), local('CosmicLagerRough-Texture'),
+        url('CosmicLagerRough-Texture.eot?#iefix') format('embedded-opentype'),
+        url('CosmicLagerRough-Texture.woff2') format('woff2'),
+        url('CosmicLagerRough-Texture.woff') format('woff'),
+        url('CosmicLagerRough-Texture.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cosmic Lager';
+    src: url('CosmicLager-Regular.eot');
+    src: local('Cosmic Lager Regular'), local('CosmicLager-Regular'),
+        url('CosmicLager-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CosmicLager-Regular.woff2') format('woff2'),
+        url('CosmicLager-Regular.woff') format('woff'),
+        url('CosmicLager-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
