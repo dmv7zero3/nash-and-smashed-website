@@ -2,7 +2,7 @@
 Rate Limiting Module for AWS Lambda Functions
 Provides IP-based rate limiting using DynamoDB
 """
-# AWS_Lambda_Functions/nashsmash-submit-job-application-form/rate_limiting.py
+
 import os
 import boto3
 import logging

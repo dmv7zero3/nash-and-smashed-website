@@ -21,21 +21,24 @@ def validate_phone(phone):
     phone_regex = r'^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$'
     return re.match(phone_regex, phone) is not None
 
-def validate_contact_request(event_body):
-    """Validate contact form submission data"""
+def validate_fundraising_request(event_body):
+    """Validate fundraising form submission data"""
     errors = {}
     
     # Check required fields
-    if not event_body.get('firstName'):
-        errors['firstName'] = "First name is required"
+    if not event_body.get('organizationName'):
+        errors['organizationName'] = "Organization name is required"
     
-    if not event_body.get('lastName'):
-        errors['lastName'] = "Last name is required"
+    if not event_body.get('orgType'):
+        errors['orgType'] = "Organization type is required"
+    
+    if not event_body.get('contactName'):
+        errors['contactName'] = "Contact name is required"
     
     # Validate email
     email = event_body.get('email')
     if not email:
-        errors['email'] = "Email is required"
+        errors['email'] = "Email address is required"
     elif not validate_email(email):
         errors['email'] = "Email address is invalid"
     
@@ -46,15 +49,11 @@ def validate_contact_request(event_body):
     elif not validate_phone(phone):
         errors['phone'] = "Phone number is invalid"
     
-    # Validate interest type
-    if not event_body.get('interestType'):
-        errors['interestType'] = "Interest type is required"
+    if not event_body.get('location'):
+        errors['location'] = "Location is required"
     
-    # Validate message
-    if not event_body.get('message'):
-        errors['message'] = "Message is required"
-    elif len(event_body.get('message', '')) < 10:
-        errors['message'] = "Message is too short (minimum 10 characters)"
+    if not event_body.get('preferredDate'):
+        errors['preferredDate'] = "Preferred date is required"
     
     # Convert to list format if needed
     if errors:

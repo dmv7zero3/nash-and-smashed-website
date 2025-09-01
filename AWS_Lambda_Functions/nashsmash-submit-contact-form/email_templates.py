@@ -1,4 +1,3 @@
-# AWS_Lambda_Functions/nashsmash-submit-contact-form/email_templates.py
 from datetime import datetime
 
 def get_contact_notification_template(form_data, form_id, website_name, website_url):

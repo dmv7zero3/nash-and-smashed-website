@@ -1,4 +1,3 @@
-# AWS_Lambda_Functions/nashsmash-submit-job-application-form/storage.py
 import os
 import json
 import time

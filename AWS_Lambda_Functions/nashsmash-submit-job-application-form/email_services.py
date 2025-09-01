@@ -1,4 +1,3 @@
-# AWS_Lambda_Functions/nashsmash-submit-job-application-form/email_services.py
 import os
 import boto3
 import logging

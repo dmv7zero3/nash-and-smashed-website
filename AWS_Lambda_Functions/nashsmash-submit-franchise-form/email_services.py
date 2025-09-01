@@ -3,7 +3,7 @@ import boto3
 import logging
 from datetime import datetime
 from botocore.exceptions import ClientError
-from email_templates import get_contact_notification_template, get_contact_confirmation_template
+from email_templates import get_franchise_notification_template, get_franchise_confirmation_template
 
 # Configure logging
 logger = logging.getLogger()
@@ -12,12 +12,12 @@ logger = logging.getLogger()
 ses = boto3.client('ses')
 
 # Environment variables - update for Nash & Smashed
-SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'info@nashandsmashed.com')
-RECIPIENT_EMAIL = os.environ.get('RECIPIENT_EMAIL', 'info@nashandsmashed.com')
+SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'nashandsmashed@marketbrewer.com')
+RECIPIENT_EMAIL = os.environ.get('RECIPIENT_EMAIL', 'nashandsmashed@marketbrewer.com')
 CC_EMAIL = os.environ.get('CC_EMAIL')
 
 def send_notification_email(form_data, form_id, website_name, website_url, to_addresses=None, cc_addresses=None):
-    """Send notification email to contact form administrators"""
+    """Send notification email to franchise administrators"""
     # Use provided to_addresses or default
     if to_addresses is None:
         to_addresses = [RECIPIENT_EMAIL]
@@ -28,7 +28,7 @@ def send_notification_email(form_data, form_id, website_name, website_url, to_ad
     elif cc_addresses is None:
         cc_addresses = []
     
-    subject, body_html, body_text = get_contact_notification_template(
+    subject, body_html, body_text = get_franchise_notification_template(
         form_data=form_data,
         form_id=form_id,
         website_name=website_name,
@@ -70,7 +70,7 @@ def send_notification_email(form_data, form_id, website_name, website_url, to_ad
 
 def send_confirmation_email(form_data, website_name, website_url):
     """Send confirmation email to the person who submitted the form"""
-    subject, body_html, body_text = get_contact_confirmation_template(
+    subject, body_html, body_text = get_franchise_confirmation_template(
         form_data=form_data,
         website_name=website_name,
         website_url=website_url

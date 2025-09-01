@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 dynamodb = boto3.resource('dynamodb')
 
 # Configuration from environment variables
-RATE_LIMIT_TABLE_NAME = os.environ.get('RATE_LIMIT_TABLE', 'career-form-rate-limits')
+RATE_LIMIT_TABLE_NAME = os.environ.get('RATE_LIMIT_TABLE', 'nash-and-smashed-form-rate-limits')
 MAX_SUBMISSIONS_PER_IP_PER_HOUR = int(os.environ.get('MAX_SUBMISSIONS_PER_HOUR', '5'))
 MAX_SUBMISSIONS_PER_IP_PER_DAY = int(os.environ.get('MAX_SUBMISSIONS_PER_DAY', '10'))
 

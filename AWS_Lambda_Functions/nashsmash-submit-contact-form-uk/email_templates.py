@@ -124,8 +124,7 @@ def get_uk_contact_confirmation_template(form_data, website_name, website_url):
                 
                 <p>If you have any immediate questions or need urgent assistance, please feel free to contact our UK team directly:</p>
                 <ul>
-                    <li>📧 Email: <a href="mailto:info@nashandsmashed.co.uk">info@nashandsmashed.co.uk</a></li>
-                    <li>📧 Franchising: <a href="mailto:franchising@nashandsmashed.co.uk">franchising@nashandsmashed.co.uk</a></li>
+                    <li>📧 Email: <a href="mailto:info@nashandsmashed.com">info@nashandsmashed.com</a></li>
                 </ul>
                 
                 <p>We're excited about expanding Nash & Smashed across the UK and look forward to connecting with you soon!</p>

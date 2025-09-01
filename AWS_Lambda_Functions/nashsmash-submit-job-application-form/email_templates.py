@@ -1,4 +1,3 @@
-# AWS_Lambda_Functions/nashsmash-submit-job-application-form/email_templates.py
 from datetime import datetime
 
 def get_career_notification_template(form_data, form_id, website_name, website_url):

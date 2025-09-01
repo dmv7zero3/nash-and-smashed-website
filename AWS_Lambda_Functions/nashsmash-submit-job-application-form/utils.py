@@ -1,4 +1,3 @@
-# AWS_Lambda_Functions/nashsmash-submit-job-application-form/utils.py
 import json
 import logging
 from datetime import datetime
